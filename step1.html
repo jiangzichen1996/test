@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="draft" class="layer">
+            <div class="content">
+                草稿
+            </div>
+            <div class="r_arrow">
+                <div class="r_outer"></div>
+                <div class="r_inner"></div>
+            </div>
+        </div>
+        <div id="wait1" class="layer then">
+            <div class="l_arrow">
+                <div class="l_inner"></div>
+                <div class="r_outer"></div>
+            </div>
+            <div class="content border_n  blue">
+                <span>待审核</span> 
+            </div>
+            <div class="r_arrow">
+                <div class="r_outer blue_b"></div>
+                <div class="r_inner blue_b"></div>
+            </div>
+        </div>
+        <div id="wait2" class="layer then">
+                <div class="l_arrow">
+                    <div class="l_inner grey"></div>
+                    <div class="l_outer"></div>
+                </div>
+                <div class="content white">
+                    <span>待复核</span> 
+                </div>
+                <div class="r_arrow">
+                        <div class="r_inner white_b"></div>
+                    <div class="r_outer"></div>
+                </div>
+        </div>
+        <div id="checked" class="layer then">
+                <div class="l_arrow">
+                    <div class="l_inner grey"></div>
+                    <div class="l_outer"></div>
+                </div>
+                <div class="content white m_right">
+                    已核准
+                </div>
+                
+        </div>
+        </br></br></br>
+        <div id="end" class="layer end">
+                <div class="content m_right white red">
+                    已终止
+                </div>
+                
+        </div>
+    </div>
+<script src="js/index.js"></script>
+
+</body>
+
+</html>
