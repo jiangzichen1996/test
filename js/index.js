@@ -3,6 +3,8 @@ let arr= [{"name":"待接单","status":"WAIT_ACCEPT","isShadowed":true},{"name":
 
 let check = (arr,context)=>{
     let wait, layer,checked;
+
+    // 创建四种不同形状的图形，通过条件判断在目标中插入哪一种
     let end = '<div class="layer end">'+
                 '<div class="content m_right white red">'+
                 '已中止'+
@@ -50,7 +52,7 @@ let check = (arr,context)=>{
                 $(context).append(wait);
                 
             }
-
+// 通过对数组内对象属性的判断，改变图形css样式，使其变色
             if(arr[i].isShadowed == true&& arr[i].isCurrentStatus== true){
                 console.log($('.layer').eq(i).children().filter('.r_arrow'));
                 $('.layer').eq(i).children().filter('.r_arrow').children().removeClass('white_b').addClass('blue_b');
@@ -67,4 +69,6 @@ let check = (arr,context)=>{
 
     }
 }
+
+//根据数组形成图形
 check(arr,$('body'));
